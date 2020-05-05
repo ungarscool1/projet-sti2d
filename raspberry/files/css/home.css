@@ -1,0 +1,258 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+html {
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    cursor: none;
+    user-select: none;
+}
+.status {
+    width: 100vw;
+    height: 20px;
+    text-align: right;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.status>#wifi {
+    margin-right: 20px;
+}
+
+.status>#time {
+    margin-right: 20px;
+}
+
+.tabs>li {
+    background-color: #4e555b;
+    display: inline;
+    padding: 12px 2px 18px 2px;
+    width: 100px;
+    height: 49px;
+    border: solid #707070 1px;
+}
+
+.tabs>li.active {
+    background-color: rgba(122, 122, 122, .26);
+}
+.tabs>li>button {
+    color: #fff;
+    position: relative;
+    width: 172px;
+    height: 49px;
+    transition: 0.5s;
+    border:transparent;
+}
+.tabs>li>button:hover {
+    background-color: rgba(122, 122, 122, .26);
+}
+.tabs>li>button>.badge {
+    background-color: #4e555b;
+    color: #fff;
+    width: 25px;
+    height: 20px;
+    display: inline-block;
+    border: solid #707070 1px;
+    border-radius: 25px;
+    margin-left: 30px;
+    padding: 5px 0px 0px 0px;
+    text-align: center;
+}
+
+
+.btn-right-round {
+    background-color: #4e555b;
+    color: #fff;
+    width: 236px;
+    height: 47px;
+    border: solid #707070 1px;
+    margin-bottom: 10px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.btn-perso {
+    background-color: #4e555b;
+    color: #fff;
+    width: 124px;
+    height: 49px;
+    margin-bottom: 10px;
+    border: solid #707070 1px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+#manage>form{
+    display: inline;
+}
+
+.btn-manage {
+    background-color: #4e555b;
+    font-size: 40px;
+    font-weight: 300;
+    color: #fff;
+    width: 49px;
+    height: 49px;
+    border: solid #707070 1px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 49px;
+}
+
+.map, #control {
+    display: inline-block;
+}
+
+table>button {
+    background-color: #4e555b;
+    color: #fff;
+    padding: 12px 2px 18px 2px;
+    display: inline;
+    width: 100px;
+    height: 49px;
+    border: solid #707070 1px;
+    transition: 0.5s;
+}
+
+/* Settings */
+
+.settings {
+    font-weight: 300;
+}
+
+.settings-cat {
+    display: block;
+    border: solid #707070 1px;
+    width: 260px;
+    height: 42px;
+    background-color: #4e555b;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.settings-cat>button {
+    width: 260px;
+    height:42px;
+    background-color: transparent;
+    border:transparent;
+    color: #fff;
+}
+
+/* Form style */
+
+select {
+    width: 25vw;
+    height: 5vh;
+    color: #000;
+    background-color: #fff;
+    border: solid #4e555b 1px;
+    border-radius: 0px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+/* Popup css */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.4);
+    justify-content: center;
+    align-content: center;
+}
+
+.modal-body {
+    background-color: #4e555b;
+    margin: 15% auto;
+    padding: 20px;
+    border: solid #888 1px;
+    width: 80vw;
+}
+
+.modal-body .manage {
+    padding: 0px;
+}
+
+/* CSS Copier d'internet pour faire des switchs */
+
+.onoffswitch {
+    position: relative; width: 60px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #E3E3E3; border-radius: 36px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 36px; padding: 0; line-height: 36px;
+    font-size: 16px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "";
+    padding-left: 10px;
+    background-color: #49E845; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "";
+    padding-right: 10px;
+    background-color: #FFFFFF; color: #666666;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 36px; margin: 0px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 20px;
+    border: 2px solid #E3E3E3; border-radius: 36px;
+    transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+}
+
+/* Theme clair  */
+
+.theme-clair .btn-perso, .theme-clair .btn-right-round, .theme-clair .tabs>li>button>.badge, .theme-clair .tabs>li, .theme-clair .tabs>li>button, .theme-clair .btn-manage, .theme-clair .modal-body{
+    background-color: #fff;
+    color: #000;
+}
+
+.theme-clair>.status {
+    background-color: #9D9A9A;
+}
+
+/* Theme sombre */
+
+
+.theme-sombre .btn-perso, .theme-sombre .btn-right-round, .theme-sombre .tabs>li>button>.badge, .theme-sombre .tabs>li, .theme-sombre .tabs>li>button, .theme-sombre table>a .theme-sombre .modal-body{
+    background-color: #4e555b;
+    color: #fff;
+}
+
+.theme-sombre {
+    background-color: #1d2124;
+    color: #fff;
+}
+
+.theme-sombre #main {
+    color: #fff;
+}
+
+.theme-sombre .status {
+    background-color: #2c3e50;
+}

@@ -1,0 +1,26 @@
+CREATE DATABASE domotique;
+use domotique;
+CREATE TABLE devices (
+  id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  type VARCHAR(50) NOT NULL,
+  ip VARCHAR(11) NOT NULL,
+  multi BOOLEAN DEFAULT 0 NOT NULL,
+  multiId int DEFAULT 0 NOT NULL,
+  pos VARCHAR(100) NOT NULL,
+  status BOOLEAN DEFAULT 0 NOT NULL
+)
+ENGINE=InnoDB
+DEFAULT  CHARSET=utf8
+COLLATE=utf8_general_ci;
+
+CREATE TABLE settings (
+  id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  owner_name VARCHAR(255),
+  owner_token VARCHAR(255),
+  code int,
+  lockTime bigint DEFAULT 30
+)
+ENGINE=InnoDB
+DEFAULT CHARSET=utf8
+COLLATE=utf8_general_ci;

@@ -1,0 +1,4 @@
+Cela permet d'améliorer l'experiance par l'envoi de diagnostique automatique (comme l'usage de la batterie, les rapports de bugs, le temps d'allumages des lumières, le nombre d'allumage et d'extinction des lumières) à LVL.
+Ces informations ne pourrons vous identifié et peut aider à améliorer les choses tels que l'usage de la batterie, la stabilité de l'application ainsi que l'amélioration des appareils.
+
+Si vous refusez cette fonction cela n'affectera pas votre appareil du fait d'envoyé des informations pour accèder aux services nécessaire comme la mise à jour, l'accès à distance et la sécurité.
